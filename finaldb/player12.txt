@@ -1,0 +1,27 @@
+1 Spain GK David deGea
+2 Sweden DF Victor Lindelof
+3 IvoryCoast DF Eric Bailly
+4 England DF Phil Jones
+5 Argentina DF Marcos Rojo
+6 France MF Paul Pogba
+8 Spain MF Juan Mata
+9 Belgium FW Romelu Lukaku
+10 Sweden FW Zlatan Ibrahimovic
+11 France FW Anthony Martial
+12 England DF Chris Smalling
+14 England MF Jesse Lingard
+16 England MF Michael Carrick
+17 Netherlands DF Daley Blind
+18 England MF Ashley Young
+19 England FW Marcus Rashford
+20 Argentina GK Sergio Romero
+21 Spain MF Ander Herrera
+22 Armenia MF Henrikh Mkhitaryan
+23 England DF Luke Shaw
+25 Ecuador DF Antonio Valencia
+27 Belgium MF Marouane Fellaini
+31 Serbia MF Nemanja Matic
+36 Italy DF Matteo Darmian
+38 England DF Axel Tuanzebe
+39 England MF Scott McTominay
+40 Portugal GK Joel Castro Pereira

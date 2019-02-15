@@ -1,0 +1,27 @@
+2 France DF Mathieu Debuchy
+4 Germany DF Per Mertesacker (captain)
+6 France DF Laurent Koscielny (vice-captain)
+7 Chile FW Alexis Sanchez
+8 Wales MF Aaron Ramsey
+9 France FW Alexandre Lacazette
+10 England MF Jack Wilshere
+11 Germany MF Mesut Ozil
+12 France FW Olivier Giroud
+13 Colombia GK David Ospina
+14 England FW Theo Walcott
+16 England DF Rob Holding
+17 Nigeria FW Alex Iwobi
+18 Spain DF Nacho Monreal
+19 Spain MF Santi Cazorla
+20 Germany DF Shkodran Mustafi
+21 England DF Calum Chambers
+22 France MF Jeff Reine-Adelaide
+23 England FW Danny Welbeck
+24 Spain DF Hector Bellein
+29 Switzerland MF Granit Xhaka
+30 England MF Ainsley Maitland-Niles
+31 BosniaandHerzegovina DF Sead Kolasinac
+32 England FW Chuba Akpom
+33 CzechRepublic GK Petr Cech
+34 France MF Francis Coquelin
+35 Egypt MF Mohamed Elneny

@@ -1,0 +1,26 @@
+1 England GK Jack Butland
+3 Netherlands DF Erik Pieters
+4 Wales MF Joe Allen
+5 Austria DF Kevin Wimmer
+6 France DF Kurt Zouma
+7 Ireland MF Stephen Ireland
+8 England DF Glen Johnson
+9 England FW Saido Berahino
+10 Cameroon FW Eric Maxim Choupo-Moting
+11 Spain FW Jese Rodriguez
+12 England DF Josh Tymon
+14 Netherlands MF Ibrahim Afellay
+15 Netherlands DF Bruno Martins
+16 Scotland MF Charlie Adam
+17 England DF Ryan Shawcross
+18 Senegal FW Mame Diouf
+20 UnitedStates DF Geoff Cameron
+22 Switzerland MF Xherdan Shaqiri
+24 Scotland MF Darren Fletcher
+25 England FW Peter Crouch
+28 Belgium FW Julien Ngoy
+29 Denmark GK Jakob Haugaard
+31 Belgium MF Thibaud Verlinden
+32 Egypt MF Ramadan Sobhi
+33 England GK Lee Grant
+42 England DF Tom Edwards

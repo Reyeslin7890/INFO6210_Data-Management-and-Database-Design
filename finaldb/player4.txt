@@ -1,0 +1,25 @@
+1 England GK Tom Heaton
+2 England DF Matthew Lowton
+3 England DF Charlie Taylor
+4 England MF Jack Cork
+5 England DF James Tarkowski
+6 England DF Ben Mee
+8 England MF Dean Marney
+9 Wales FW Sam Vokes
+10 Austria FW Ashley Barnes
+11 NewZealand FW Chris Wood
+12 Ireland MF Robbie Brady
+13 Ireland MF Jeff Hendrick
+16 Belgium MF Steven Defour
+17 Iceland MF Johann Berg Guomundsson
+18 England MF Ashley Westwood
+19 Ireland FW Jonathan Walters
+20 Norway MF Fredrik Ulvestad
+21 Bermuda FW Nahki Wells
+22 Denmark GK Anders Lindegaard
+23 Ireland DF Stephen Ward
+26 Scotland DF Phil Bardsley
+28 Ireland DF Kevin Long
+29 England GK Nick Pope
+30 England GK Adam Legzdins
+37 Canada MF Scott Arfield

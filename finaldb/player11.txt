@@ -1,0 +1,24 @@
+1 Chile GK Claudio Bravo
+2 England DF Kyle Walker
+3 Brazil DF Danilo daSilva
+4 Belgium DF Vincent Kompany
+5 England DF John Stones
+7 England MF Raheem Sterling
+8 Germany MF ilkay Gundogan
+10 Argentina FW Sergio Aguero
+15 France DF Eliaquim Mangala
+17 Belgium MF Kevin De Bruyne
+18 England MF Fabian Delph
+19 Germany MF Leroy Sane
+20 Portugal MF Bernardo Silva
+21 Spain MF David Silva
+22 France DF Benjamin Mendy
+24 England DF Tosin Adarabioyo
+25 Brazil MF Fernandinho Roza
+30 Argentina DF Nicolas Otamendi
+31 Brazil GK Ederson Moraes
+33 Brazil FW Gabriel Jesus
+35 Ukraine MF Oleksandr Zinchenko
+42 IvoryCoast MF Yaya Toure
+47 England MF Phil Foden
+55 Spain MF Brahim Diaz

@@ -1,0 +1,174 @@
+DELIMITER //
+
+create trigger standing_matchevent_trigger
+after update on matches
+for each row
+begin
+	
+set @hn = new.HomeTeamScore;
+    
+set @ho = old.HomeTeamScore;
+    
+set @an = new.AwayTeamScore;
+    
+set @ao = old.AwayTeamScore;
+    
+set @homet = old.HomeTeamID;
+    
+set @awayt = old.AwayTeamID;
+    
+    
+#ht scores
+    
+update premierleaguestandings
+    
+set GoalFor = GoalFor + 1,
+		
+GoalDifference = GoalDifference + 1
+    
+where (@hn > @ho) and (ClubID = @homet);
+    
+	
+update premierleaguestandings
+    
+set GoalAgainst = GoalAgainst + 1,
+		
+GoalDifference = GoalDifference - 1
+    
+where (@hn > @ho) and (ClubID = @awayt);
+    
+    
+#at scores
+	update premierleaguestandings
+    
+set GoalFor = GoalFor + 1,
+		
+GoalDifference = GoalDifference + 1
+    
+where (@an > @ao) and (ClubID = @awayt);
+    
+   
+update premierleaguestandings
+    
+set GoalAgainst = GoalAgainst + 1,
+		
+GoalDifference = GoalDifference - 1
+    
+where (@hn > @ho) and (ClubID = @homet);
+
+	
+#ht scored, tied at
+	
+update premierleaguestandings
+    
+set Loses = Loses - 1,
+		
+Draws = Draws + 1,
+        
+Points = Points + 1
+    
+where (@hn > @ho) and (@hn = @an) and (ClubID = @homet);
+    
+	
+update premierleaguestandings
+    
+set Wins = Wins - 1,
+		
+Draws = Draws + 1,
+        
+Points = Points - 2
+    
+where (@hn > @ho) and (@hn = @an) and (ClubID = @awayt);
+    
+    
+#ht scored, surpassed at
+	
+update premierleaguestandings
+    
+set Wins = Wins + 1,
+		
+Draws = Draws - 1,
+       
+Points = Points + 2
+    
+where (@hn > @ho) and (@ho = @ao) and (ClubID = @homet);
+    
+	
+update premierleaguestandings
+    
+set Loses = Loses + 1,
+		
+Draws = Draws - 1,
+        
+Points = Points - 1
+    
+where (@hn > @ho) and (@ho = @ao) and (ClubID = @awayt);
+    
+    
+#at scored, tied ht
+	
+update premierleaguestandings
+    
+set Wins = Wins - 1,
+		
+Draws = Draws + 1,
+        
+Points = Points - 2
+    
+where (@hn = @ho) and (@hn = @an) and (ClubID = @homet);
+    
+	
+update premierleaguestandings
+    
+set Loses = Loses - 1,
+		
+Draws = Draws + 1,
+        
+Points = Points + 1
+    
+where (@hn = @ho) and (@hn = @an) and (ClubID = @awayt);
+    
+    
+#at scored, surpassed ht
+	
+update premierleaguestandings
+    
+set Loses = Loses + 1,
+		
+Draws = Draws - 1,
+        
+Points = Points - 1
+    
+where (@hn = @ho) and (@ho = @ao) and (ClubID = @homet);
+	
+	
+update premierleaguestandings
+    
+set Wins = Wins + 1,
+		
+Draws = Draws - 1,
+        
+Points = Points + 2
+    
+where (@hn = @ho) and (@ho = @ao) and (ClubID = @awayt);
+    
+
+END;//
+
+
+
+DELIMITER //
+create trigger matchevent_trigger
+after insert on matchevents
+for each row
+begin
+	set @m = new.Match_ID;
+    set @p = new.PlayerID;    
+    set @eve = new.Event;
+    update matches
+    set HomeTeamScore = HomeTeamScore + 1
+    where (@eve = 'Goal') and (matches.MatchID = @m) and (@p = (select players.PlayerID from players where (players.PlayerID = @p) and (players.BelongtoClubID = HomeTeamID)));
+    update matches
+    set AwayTeamID = AwayTeamID + 1
+    where (@eve = 'Goal') and (matches.MatchID = @m) and (@p = (select players.PlayerID from players where (players.PlayerID = @p) and (players.BelongtoClubID = AwayTeamID)));
+END;//
